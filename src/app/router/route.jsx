@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import Layout from "../../widgets/Layout/Layout";
-import HomeRoute from "../../feature/Home/route";  // Достаточно одного импорта HomeRoute
+import HomeRoute from "../../feature/Home/route";  
 
 export const MyRoutes = () => {
     return useRoutes([
