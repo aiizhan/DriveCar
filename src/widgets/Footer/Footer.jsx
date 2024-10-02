@@ -1,8 +1,12 @@
 import React from 'react'
+import Container from '../../shared/helpers/Container'
 
 const Footer = () => {
   return (
-    <div className='text-white'>Footer</div>
+    <Container>
+
+      <div className='text-white h-96'>ss</div>
+    </Container>
   )
 }
 
