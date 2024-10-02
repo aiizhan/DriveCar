@@ -7,7 +7,7 @@ const CardsHome = () => {
     return (
         <Container>
             <div className='text-white' style={{
-                marginTop: 100
+                marginTop: 100,
             }}>
                 <div className="text">
                     <h1 className='text-center' style={{ fontSize: 36, marginBottom: 30 }}>ВСЕ АВТО КЫРГЗСТАНА </h1>
@@ -170,6 +170,9 @@ const CardsHome = () => {
                             <img src={Shopping} alt="" />
                         </div>
                     </div>
+                </div>
+                <div className="button" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 80}}>
+                    <button style={{background: '#306AD9', color: 'white', padding: '14px 32px', borderRadius: '8px'}}>Показать ещё</button>
                 </div>
             </div>
         </Container>
