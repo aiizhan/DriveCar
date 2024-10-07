@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <Container>
-      <div className='text-white flex  justify-between items-center p-6'>
+      <div className='text-white flex  justify-between items-center p-6 relative z-10'>
         <Link to='/' > <img src={Logo} alt="" /> </Link>
         <div className=' flex gap-7 items-center'>
           <NavLink to='/' className=' hover:text-[#006AFF] '>Главная</NavLink>
