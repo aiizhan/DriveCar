@@ -7,9 +7,11 @@ import Twitter from '@mui/icons-material/Twitter'
 
 import Container from '../../shared/helpers/Container'
 
+
+
+
 const Footer = () => {
   return (
-
     <div className="bg-[url('../../shared/assets/png/futter.png')]  bg-cover bg-center text-white py-4 md:py-[48px]  ">
       <Container>
         <div className='flex  gap-[300px]'>
