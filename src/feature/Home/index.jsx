@@ -1,12 +1,18 @@
 import React from 'react'
-import Container from '../../shared/helpers/Container'
+import Banner from '../../widgets/banner/Banner'
+import Services from '../../widgets/services/Services'
+import CardsHome from '../../widgets/cards-home/CardsHome'
+import Description from '../../widgets/description/Description'
+import Commentaries from '../../widgets/commentaries/Commentaries'
 
 const Home = () => {
   return (
-      <div >
-          <Container>
-              <h1 className='text-white'>Home</h1>
-          </Container>
+    <div >
+      <Banner/>
+      <Services/>
+      <CardsHome/>
+      <Description/>
+      <Commentaries/>
     </div>
   )
 }

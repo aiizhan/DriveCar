@@ -6,6 +6,7 @@ import Location from "../../feature/register/location/Location";
 import ForgotPassw from "../../feature/register/forgotPassword/ForgotPassw";
 import ForgotCode from "../../feature/register/forgotCode/ForgotCode";
 import AddedPassw from "../../feature/register/addedPassw/AddedPassw";
+import HomeRoute from "../../feature/Home/route";  
 
 export const MyRoutes = () => {
     return useRoutes([
