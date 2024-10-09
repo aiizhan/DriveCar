@@ -1,0 +1,23 @@
+.back1 {
+    background-color: #111120;
+    width: 625px;
+    height: 416px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.logo {
+    position: relative; 
+    top: 5px; 
+}
+
+.pop {
+    color: white;
+}
+.forgot-btn {
+    border-radius: 10px;
+}
