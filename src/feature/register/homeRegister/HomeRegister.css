@@ -1,0 +1,37 @@
+.back {
+    background-color: #111120;
+    width: 625px;
+    height: 658px;
+    border-radius: 20px;
+}
+ 
+input {
+    background-color: #292E39;
+    border: 1px solid white;
+    color: white !important;
+    padding-left: 10px !important;
+}
+
+#btn {
+    border: 1PX SOLID RED;
+    text-align: center !important;
+}
+
+.switch-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.font {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.home {
+    cursor: pointer;
+}
+
+.backk {
+    font-size: 30px;
+}

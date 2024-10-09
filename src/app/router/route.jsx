@@ -1,6 +1,11 @@
 import { useRoutes } from "react-router-dom";
 import Layout from "../../widgets/Layout/Layout";
-import HomeRoute from "../../feature/Home/route";  // Достаточно одного импорта HomeRoute
+import HomeRoute from "../../feature/Home/route";
+import Register from "../../feature/register/Register";
+import Location from "../../feature/register/location/Location";
+import ForgotPassw from "../../feature/register/forgotPassword/ForgotPassw";
+import ForgotCode from "../../feature/register/forgotCode/ForgotCode";
+import AddedPassw from "../../feature/register/addedPassw/AddedPassw";
 
 export const MyRoutes = () => {
     return useRoutes([
@@ -8,8 +13,28 @@ export const MyRoutes = () => {
             path: "/",
             element: <Layout />,
             children: [
-                HomeRoute  
+                HomeRoute
             ]
+        },
+        {
+            path: '/register',
+            element: <Register />
+        },
+        {
+            path: '/location',
+            element: <Location />
+        },
+        {
+            path: '/forgotPassw',
+            element: <ForgotPassw />
+        }, 
+        { 
+            path: '/forgotCode',
+            element: <ForgotCode />
+        },
+        {
+            path: '/addedPassw',
+            element: <AddedPassw />
         }
     ]);
 };
