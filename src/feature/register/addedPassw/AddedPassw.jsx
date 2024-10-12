@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import './AddedPassw.css';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
@@ -10,30 +9,27 @@ const AddedPassw = () => {
     const { email } = location.state || {};
     const [showPassword, setShowPassword] = useState(false);
     const [showConfPassword, setShowConfPassword] = useState(false);
-
     const [newPassword, setNewPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setError(''); // Сбрасываем ошибку перед проверкой
-
+        setError('');
+    
         if (newPassword.length < 8) {
             setError('Пароль должен содержать не менее 8 символов!');
             return;
         }
-
+    
         if (newPassword !== confirmPassword) {
             setError('Пароли не совпадают!');
             return;
         }
-
-        console.log('Новый пароль:', newPassword);
-        
-        alert('Пароль успешно изменен!');
-        navigate('/login');
+    
+        navigate('/location', { state: { email, newPassword } });
     };
+    
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -44,14 +40,14 @@ const AddedPassw = () => {
     };
 
     return (
-        <div className='back-passw'>
-            <div className="passw">
-                <h2>Создать пароль для {email}</h2>
-                <div className='air'>
-                    <p>Выберите надежный пароль! Минимальная длина пароля 8 символов.</p>
+        <div className='back-passw m-auto p-[50px] bg-[#111120] mt-[60px] w-[615px] h-[650px] rounded-[20px] text-white'>
+            <div className="passw w-[515px] h-[450px]">
+                <h2 className='text-center mt-[60px] text-3xl font-medium'>Создать пароль для {email}</h2>
+                <div className='w-[331px] text-center ml-[92px] mt-[15px]'>
+                    <p className='w-[331px]'>Выберите надежный пароль! Минимальная длина пароля 8 символов.</p>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className='added'>
+                    <div className='flex flex-col mt-10'>
                         <label>Новый пароль:</label>
                         <div className="relative">
                             <input
@@ -59,7 +55,8 @@ const AddedPassw = () => {
                                 value={newPassword}
                                 onChange={(e) => setNewPassword(e.target.value)}
                                 required
-                                className="w-full pr-10"
+                                className="w-full pr-10 h-[35px] rounded-[4px] bg-[#292E39] pl-3 "
+                                style={{border:'1px solid white'}}
                             />
                             <button
                                 type="button"
@@ -70,7 +67,7 @@ const AddedPassw = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='added'>
+                    <div className='flex flex-col mt-[35px]'>
                         <label>Подтвердите новый пароль:</label>
                         <div className="relative">
                             <input
@@ -78,7 +75,8 @@ const AddedPassw = () => {
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                                 required
-                                className="w-full pr-10"
+                                className="w-full pr-10 h-[35px] rounded-[4px] bg-[#292E39] pl-3"
+                                style={{border:'1px solid white'}}
                             />
                             <button
                                 type="button"
@@ -90,7 +88,7 @@ const AddedPassw = () => {
                         </div>
                     </div>
                     {error && <p className="text-red-500">{error}</p>}
-                    <button className='bg-purple-800 contin' type="submit">Сохранить</button>
+                    <button className='bg-purple-700 contin hover:bg-purple-600 w-[515px] h-[53px] mt-[30px] rounded-[10px]' type="submit">Сохранить</button>
                 </form>
             </div>
         </div>

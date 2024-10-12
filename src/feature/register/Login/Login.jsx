@@ -1,4 +1,4 @@
-import './Login.css';
+// import './Login.css';
 import right from '../../../shared/assets/img/Vector.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
@@ -37,7 +37,7 @@ const Login = ({ toggleForm }) => {
     }
 
     return (
-        <div className='back'>
+        <div className='bg-[#111120] w-[625px] h-[613px] rounded-[20px] text-white'>
             <div className="min-h-full flex-col px-6 py-12 lg:px-8">
                 <div className='mb-5'>
                     <img src={right} alt="Your Company" className='home mb-20 text-start' onClick={handleLogoClick} />
@@ -54,7 +54,7 @@ const Login = ({ toggleForm }) => {
                                     name="email"
                                     type="email"
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-[#292E39] pl-3 text-white"
                                 />
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Login = ({ toggleForm }) => {
                                     type={showPassword ? 'text' : 'password'}
                                     autoComplete="current-password"
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-[#292E39] pl-3 text-white"
                                 />
                                 <button
                                     type="button"
