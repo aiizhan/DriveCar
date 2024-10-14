@@ -1,5 +1,5 @@
 import right from '../../../shared/assets/img/Vector.svg';
-import './HomeRegister.css';
+// import './HomeRegister.css';
 import { useState } from 'react';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 const HomeRegister = ({ toggleForm }) => {
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    const [showEmail, setShowEmail] = useState(false);
+    // const [showEmail, setShowEmail] = useState(false);
     const [formData, setFormData] = useState({ name: '', email: '', password: '', confirmPassword: '' });
     const [error, setError] = useState('');
     const navigate = useNavigate();
@@ -35,9 +35,9 @@ const HomeRegister = ({ toggleForm }) => {
     };
 
 
-    const toggleEmailVisibility = () => {
-        setShowEmail(!showEmail);
-    };
+    // const toggleEmailVisibility = () => {
+    //     setShowEmail(!showEmail);
+    // };
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -57,7 +57,7 @@ const HomeRegister = ({ toggleForm }) => {
 
 
     return (
-        <div className='back'>
+        <div className='bg-[#111120] w-[625px] h-[658px] rounded-[20px]'>
             <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
                 <div>
                     <img src={right} alt="Your Company" className='home' onClick={handleLogoClick} />
@@ -77,7 +77,7 @@ const HomeRegister = ({ toggleForm }) => {
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-[#292E39] text-white pl-2"
                                 />
                             </div>
                         </div>
@@ -88,19 +88,19 @@ const HomeRegister = ({ toggleForm }) => {
                                 <input
                                     id="email"
                                     name="email"
-                                    type={showEmail ? 'text' : 'email'}
+                                    type='email'
                                     autoComplete="email"
-                                    value={formData.email}
+                                    // value={formData.email}
                                     onChange={handleChange}
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-[#292E39] text-white pl-2"
                                 />
                                 <button
                                     type="button"
-                                    onClick={toggleEmailVisibility}
+                                    // onClick={toggleEmailVisibility}
                                     className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500"
                                 >
-                                    {showEmail ? <RemoveRedEyeIcon /> : <VisibilityOffIcon />}
+                                    {/* {showEmail ? <RemoveRedEyeIcon /> : <VisibilityOffIcon />} */}
                                 </button>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const HomeRegister = ({ toggleForm }) => {
                                     value={formData.password}
                                     onChange={handleChange}
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-[#292E39] text-white pl-2"
                                 />
                                 <button
                                     type="button"
@@ -139,7 +139,7 @@ const HomeRegister = ({ toggleForm }) => {
                                     value={formData.confirmPassword}
                                     onChange={handleChange}
                                     required
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-[#292E39] text-white pl-2"
                                 />
                                 <button
                                     type="button"
@@ -152,8 +152,8 @@ const HomeRegister = ({ toggleForm }) => {
                         </div>
 
 
-                        <div className="switch-btn flex items-center cursor-pointer" onClick={toggleRememberMe}>
-                            {rememberMe ? <ToggleOnOutlinedIcon className='mr-2 backk' /> : <ToggleOffOutlinedIcon className='mr-2 backk' />}
+                        <div className="switch-btn flex items-center text-white" onClick={toggleRememberMe}>
+                            {rememberMe ? <ToggleOnOutlinedIcon className='mr-2 text-3xl cursor-pointer' /> : <ToggleOffOutlinedIcon className='mr-2 backk cursor-pointer' />}
                             <h3>Запомнить</h3>
                         </div>
 
