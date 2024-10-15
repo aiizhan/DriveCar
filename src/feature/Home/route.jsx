@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Home from "../Home/index";
+import Home from "./InfoCar";
 
 const HomeRoute = {
     path: "",

@@ -12,4 +12,17 @@ createRoot(document.getElementById('root')).render(
       <App />
     </Provider>
   </StrictMode>,
+  
 )
+
+// value={value}
+// onChange={handleChange}
+// aria-label="basic tabs example"
+// TabIndicatorProps={{
+//   style: { backgroundColor: 'blue' }, // Полоска синяя
+// }}
+
+
+{/* <div className=' w-max h-max'>
+<h1 className=' text-[#FFF] text-3xl'>Audi  2016 года за ~ 175,900 сом</h1>
+</div>  */}

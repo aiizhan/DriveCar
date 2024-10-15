@@ -8,7 +8,7 @@ export const MyRoutes = () => {
             path: "/",
             element: <Layout />,
             children: [
-                HomeRoute  
+                HomeRoute ,
             ]
         }
     ]);
