@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import HomeRegister from './homeRegister/HomeRegister';
-import logoreg from '../../shared/assets/img/image 47.png';
-import Login from './Login/Login';
+import HomeRegister from '../homeRegister/HomeRegister';
+import logoreg from '../../../shared/assets/img/image47.png'
+import Login from '../Login/Login';
 
 const Register = () => {
     const [isLogin, setIsLogin] = useState(false);

@@ -1,6 +1,6 @@
-import { useState } from 'react'; // Добавьте этот импорт
+import { useState } from 'react'; 
 import { useNavigate } from 'react-router-dom';
-// import './ForgotCode.css';
+
 
 const ForgotCode = () => {
     const navigate = useNavigate();

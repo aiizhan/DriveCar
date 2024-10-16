@@ -14,7 +14,7 @@ const Header = () => {
           <NavLink className=' hover:text-[#006AFF]'>О компании</NavLink>
           <NavLink className=' hover:text-[#006AFF]'>Услуги</NavLink>
           <NavLink className=' hover:text-[#006AFF]'>Избранное </NavLink>
-          <NavLink to='/register' className='border w-[189px] p-1 text-center rounded-lg hover:bg-[#006AFF] hover:border-[#006AFF]'>Регистрация</NavLink>
+          <NavLink to='/auth/sign-up' className='border w-[189px] p-1 text-center rounded-lg hover:bg-[#006AFF] hover:border-[#006AFF]'>Регистрация</NavLink>
         </div>
 
       </div>
