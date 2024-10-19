@@ -6,10 +6,8 @@ import Location from "../../feature/register/location/Location";
 import ForgotPassw from "../../feature/register/forgotPassword/ForgotPassw";
 import ForgotCode from "../../feature/register/forgotCode/ForgotCode";
 import AddedPassw from "../../feature/register/addedPassw/AddedPassw";
-<<<<<<< HEAD
-=======
-import HomeRoute from "../../feature/Home/route";  
->>>>>>> d4d2cc7a744f9efefc7f175dcea3f12ed872a010
+import AllCars from "../../feature/all-cars/AllCars";
+
 
 export const MyRoutes = () => {
     return useRoutes([
@@ -39,6 +37,10 @@ export const MyRoutes = () => {
         {
             path: '/addedPassw',
             element: <AddedPassw />
+        },
+        {
+            path: '/allCars',
+            element: <AllCars/>
         }
     ]);
 };
