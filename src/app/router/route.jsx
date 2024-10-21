@@ -7,6 +7,7 @@ import ForgotPassw from "../../feature/register/forgotPassword/ForgotPassw";
 import ForgotCode from "../../feature/register/forgotCode/ForgotCode";
 import AddedPassw from "../../feature/register/addedPassw/AddedPassw";
 import Adminlogin from "../../widgets/admin-login/adminlogin";
+import Adminregister from "../../widgets/admin-register/adminregister";
 export const MyRoutes = () => {
     return useRoutes([
         {
@@ -40,6 +41,10 @@ export const MyRoutes = () => {
         {
             path: '/adminlogin',
             element: <Adminlogin />
+        },
+        {
+            path: '/adminregister',
+            element: <Adminregister />
         }
     ]);
 };
