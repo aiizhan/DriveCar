@@ -7,7 +7,7 @@ import ForgotPassw from "../../feature/register/forgotPassword/ForgotPassw";
 import ForgotCode from "../../feature/register/forgotCode/ForgotCode";
 import AddedPassw from "../../feature/register/addedPassw/AddedPassw";
 import AdminPart from "../../feature/admin/AdminPart";
-
+import AllCars from "../../feature/all-cars/AllCars";
 export const MyRoutes = () => {
     return useRoutes([
         {
@@ -38,8 +38,14 @@ export const MyRoutes = () => {
             element: <AddedPassw />
         },
         {
+
             path: '/admin',
-            element: <AdminPart />
+           element: <AdminPart />
+        },
+{
+            path: '/allCars',
+            element: <AllCars/>
+
         }
     ]);
 };
