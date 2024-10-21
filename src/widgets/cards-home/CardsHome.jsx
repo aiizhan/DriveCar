@@ -2,8 +2,10 @@ import React from 'react'
 import Container from '../../shared/helpers/Container'
 import Car from '../../shared/assets/img/Car1.png'
 import Shopping from '../../shared/assets/svg/shopping.svg'
+import { useNavigate } from 'react-router-dom'
 
 const CardsHome = () => {
+    const navigate = useNavigate()
     return (
         <Container>
             <div className='text-white' style={{
@@ -172,7 +174,9 @@ const CardsHome = () => {
                     </div>
                 </div>
                 <div className="button" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 80}}>
-                    <button style={{background: '#306AD9', color: 'white', padding: '14px 32px', borderRadius: '8px'}}>Показать ещё</button>
+                    <button onClick={() => {
+                        navigate('/allCars')
+                    }} style={{background: '#306AD9', color: 'white', padding: '14px 32px', borderRadius: '8px'}}>Показать ещё</button>
                 </div>
             </div>
         </Container>
