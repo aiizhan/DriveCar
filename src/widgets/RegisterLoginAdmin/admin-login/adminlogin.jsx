@@ -1,5 +1,5 @@
 import React from 'react'
-import right from '../../shared/assets/img/Vector.svg';
+import right from '../Assets/Right.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
