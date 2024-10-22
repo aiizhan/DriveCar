@@ -6,8 +6,15 @@ import Location from "../../feature/register/location/Location";
 import ForgotPassw from "../../feature/register/forgotPassword/ForgotPassw";
 import ForgotCode from "../../feature/register/forgotCode/ForgotCode";
 import AddedPassw from "../../feature/register/addedPassw/AddedPassw";
+
+import Adminlogin from "../../widgets/RegisterLoginAdmin/admin-login/adminlogin";
+import Adminregister from "../../widgets/admin-register/adminregister";
+import AdminForgotPassword from  "../../widgets/RegisterLoginAdmin/AdminForgotPassword/AdminForgotPassword";
+import AdminForgotCode from "../../widgets/RegisterLoginAdmin/AdminForgotCode/AdminForgotCode";
+import AdminAddedPassw from "../../widgets/RegisterLoginAdmin/AdminAddedPassw/AdminAddedPassw";
 import AdminPart from "../../feature/admin/AdminPart";
 import AllCars from "../../feature/all-cars/AllCars";
+
 export const MyRoutes = () => {
     return useRoutes([
         {
@@ -37,6 +44,28 @@ export const MyRoutes = () => {
             path: '/addedPassw',
             element: <AddedPassw />
         },
+
+        //Admin
+        {
+            path: '/adminlogin',
+            element: <Adminlogin />
+        },
+        {
+            path: '/adminregister',
+            element: <Adminregister />
+        },
+        {
+            path: '/admin-forgotPassw',
+            element: <AdminForgotPassword />
+        },
+        {
+            path: '/admin-forgotCode',
+            element: <AdminForgotCode />
+        },
+        {
+            path: '/admin-addedPassw',
+            element: <AdminAddedPassw />
+        },
         {
 
             path: '/admin',
@@ -47,5 +76,6 @@ export const MyRoutes = () => {
             element: <AllCars/>
 
         }
+
     ]);
 };
