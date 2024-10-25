@@ -123,7 +123,7 @@ export default function InfoCar() {
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
-          <div className="flex mt-20">
+          <div className="flex mt-20 ">
             <h1 className="absolute mt-[-60px] text-[#FFF] text-3xl">Audi 2016 года за ~ 175,900 сом</h1>
             <div className="w-[522px] h-[684px]">
               <h1 className="text-3xl text-white mt-8 ml-[16px] absolute">Audi</h1>
