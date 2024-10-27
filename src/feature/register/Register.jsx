@@ -1,31 +1,13 @@
-import { useState } from 'react';
-import HomeRegister from './homeRegister/HomeRegister';
-import logoreg from '../../shared/assets/img/image 47.png';
-import Login from './Login/Login';
+import backg from '../../shared/assets/img/image 47.png'
+import logoreg from '../../shared/assets/svg/ЛОГО.svg'
 
 const Register = () => {
-    const [isLogin, setIsLogin] = useState(false);
+  return (
+    <div className='relative flex justify-center items-center h-screen overflow-hidden'>
+      <img src={backg} alt="" className='absolute ' />
+      <img src={logoreg} alt="" className='relative top-[-300px] object-cover' />
+    </div>
+  )
+}
 
-    const toggleForm = () => {
-        setIsLogin(!isLogin);
-    };
-
-    return (
-        <div
-            style={{
-                backgroundImage: `url(${logoreg})`,
-                width: '100%',
-                height: '100vh',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }}
-        >
-            {isLogin ? <Login toggleForm={toggleForm} /> : <HomeRegister toggleForm={toggleForm} />}
-        </div>
-    );
-};
-
-export default Register;
+export default Register
